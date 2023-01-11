@@ -19,9 +19,11 @@ const { isShown, toggle } = useModal({});
 ```
 import { useModalStore } from "@/global/store/modalStore";
 
+const { changeBackground, changeColor } = useModalStore();
+
 useEffect(() => {
-changeBackground("#203a43");
-changeColor("#000");
+  changeBackground("#203a43");
+  changeColor("#000");
 }, []);
 
 ```
